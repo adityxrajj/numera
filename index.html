@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Numera</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div id="display" role="textbox" aria-label="Calculator display">0</div>
+        <div class="buttons">
+            <button class="clear" onclick="clearDisplay()" aria-label="Clear all">AC</button>
+            <button onclick="appendBrackets()" aria-label="Brackets">( )</button>
+            <button onclick="appendValue('%')" aria-label="Percentage">%</button>
+            <button class="operator" onclick="appendOperator('/')" aria-label="Divide">/</button>
+
+            <button onclick="appendValue('7')" aria-label="Seven">7</button>
+            <button onclick="appendValue('8')" aria-label="Eight">8</button>
+            <button onclick="appendValue('9')" aria-label="Nine">9</button>
+            <button class="operator" onclick="appendOperator('*')" aria-label="Multiply">*</button>
+
+            <button onclick="appendValue('4')" aria-label="Four">4</button>
+            <button onclick="appendValue('5')" aria-label="Five">5</button>
+            <button onclick="appendValue('6')" aria-label="Six">6</button>
+            <button class="operator" onclick="appendOperator('-')" aria-label="Subtract">-</button>
+
+            <button onclick="appendValue('1')" aria-label="One">1</button>
+            <button onclick="appendValue('2')" aria-label="Two">2</button>
+            <button onclick="appendValue('3')" aria-label="Three">3</button>
+            <button class="operator" onclick="appendOperator('+')" aria-label="Add">+</button>
+
+            <button onclick="appendValue('0')" aria-label="Zero">0</button>
+            <button onclick="appendValue('.')" aria-label="Decimal Point">.</button>
+            <button class="clear" onclick="clearLastCharacter()" aria-label="Backspace">⌫</button>
+            <button class="equals" onclick="calculate()" aria-label="Calculate">=</button>
+        </div>
+    </div>
+
+    <footer class="developer-info">
+        Created by <a href="https://github.com/adityxrajj">@adityxrajj</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
